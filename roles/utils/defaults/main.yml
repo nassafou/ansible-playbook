@@ -1,0 +1,10 @@
+--- 
+# package for utils
+ package_name: 
+         - vim
+         - htop
+         - git
+         - zsh
+         - python3-mysqldb
+        
+
