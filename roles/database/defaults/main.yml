@@ -1,0 +1,5 @@
+---
+# Variable for mysql
+mysql_db: "base"
+mysql_user: "user1"
+mysql_password: "123456"

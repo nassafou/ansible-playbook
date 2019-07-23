@@ -1,17 +1,21 @@
 ---
+- name: Installation database
+  hosts: database
+  remote_user: bob
+  vars:
+    user: volibear
+  roles:
+    - utils
+    - user
+    - database
+
+
 - name: Installation
   hosts: web
   remote_user: bob
   vars:
     user: volibear
   roles:
+    - utils
     - user
-  tasks: 
-     - name: Installation de logiciel
-       become: yes
-       apt: name={{ item }} update_cache=yes state=latest
-       with_items:
-         - vim
-         - htop
-         - git
-         - zsh
+ #   - web

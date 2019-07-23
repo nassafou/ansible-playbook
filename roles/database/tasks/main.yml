@@ -1,0 +1,6 @@
+---
+ - name: Installation db
+   mysql_db:
+     name: "{{ mysql_db }}"
+   become: yes
+#   apt: name=mysql_db state=latest
