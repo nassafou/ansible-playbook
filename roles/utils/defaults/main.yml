@@ -5,6 +5,11 @@
          - htop
          - git
          - zsh
+         - apache2
+         - mysql-server
+         - php7.0-common
+         - php7.0-mysql
+         - python-mysqldb
          - python3-mysqldb
         
 
